@@ -13,6 +13,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -20,16 +22,47 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <header class="main-header">
+            <div class="container">
+                <div class="main-header_inner">                    
+                    <nav class="main-header__inner-left-icons">
+                        <ul>
+                            <a href="/" title="Menu"><li class="icon"><span class="fa-stack"><i class="fa fa-bars fa-stack-1x fa-lg" aria-hidden="true"></i></span></li></a>
+                            <a href="/" title="Pesquisa"><li class="icon"><span class="fa-stack"><i class="fa fa-search fa-stack-1x fa-lg fa-flip-horizontal" aria-hidden="true"></i></span></li></a>  
+                            <a href="/" title="Explore as nossas newsletters"><li class="button"><span class="fa-stack newsletter-btn">Newsletters</span></li></a>                        
+                        </ul>
+                        
+                    </nav>
+                    <nav class="main-header__inner-right-icons">
+                        <ul>
+                            <a href="/" title="Visite-nos no Facebook"><li class="icon"><span class="fa-stack"><i class="fa fa-facebook fa-stack-1x fa-lg" aria-hidden="true"></i></span></li></a>
+                            <a href="/" title="Visite-nos no Twitter"><li class="icon"><span class="fa-stack"><i class="fa fa-twitter fa-stack-1x fa-lg" aria-hidden="true"></i></span></li></a>
+                            <a href="/" title="Alertas"><li class="icon"><span class="fa-stack"><i class="fa fa-bell fa-stack-1x fa-lg" aria-hidden="true"></i></span></li></a>
+                            <a href="/" title="Faça login"><li class="icon"><span class="fa-stack"><i class="fa fa-user fa-stack-1x fa-lg" aria-hidden="true"></i></span></li></a>
+                        </ul>                                            
+                    </nav>
+                </div>
+                <a  href="/" class="logo"><h1 class="header-logo"><span class="logo-first-letter">O</span><span class="logo-word">bservador</span></h1></a>  
+                   
+            </div>
+        </header>
+        <main>
+            <div class="main-manchette">
+                <div class="manchette-container">
+                        <img src="img/manchette_img.jpg" alt="Paris" width="1440" height="360">
+                </div>
+            </div>
+            <div class="container" style="border:solid 2px red">
+                <div class="flex-container">
+                    <h2>Fact check. Os erros e omissões de Catarina Mendes</h2>
+                    <p>Os partidos alteraram as regras para isenção do IVA? A nova lei de financiamento terá efeitos retroativos? Há aumento de dinheiros públicos? E os limites para angariações foram recomendadas pelo TC?</p>
+                </div>
+            </div>
+            
+            <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        </main>
     </body>
 </html>
